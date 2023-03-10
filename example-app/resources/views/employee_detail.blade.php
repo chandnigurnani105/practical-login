@@ -46,7 +46,7 @@
 															<!--end::Svg Icon-->
 														</span></div>
 														<span data-bs-toggle="tooltip" data-bs-trigger="hover" title="Edit Employee details">
-															<a href="#" class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Edit</a>
+															<a href="#" class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Update employee details</a>
 														</span>
 													</div>
 													<!--end::Details toggle-->
