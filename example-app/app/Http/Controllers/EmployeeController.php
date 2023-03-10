@@ -70,8 +70,9 @@ class EmployeeController extends Controller
     }
 
     public function deleteMultiple(Request $request){
-        
-        Employee::whereIn('id', json_decode($request->customerIds))->delete();
+
+
+        Employee::where('id','=', $request->id)->delete();
         
         return redirect('/employees');
     }

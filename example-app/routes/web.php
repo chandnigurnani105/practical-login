@@ -31,6 +31,6 @@ Route::post('/registration', [AuthManager::class, 'registrationPost'])->name('re
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout')->middleware('auth');
 Route::get('/employees',                    [EmployeeController::class, 'index'])           ->name('employee.list');
 Route::post('/employee',                    [EmployeeController::class, 'store'])           ->name('employee.store');
-Route::post('/employee/delete-multiple',    [EmployeeController::class, 'deleteMultiple'])  ->name('employee.deleteMultiple');
+Route::post('/employee/delete/{id}',    [EmployeeController::class, 'deleteMultiple'])  ->name('employee.deleteMultiple');
 Route::get('/employee/detail/{id}',         [EmployeeController::class, 'detail'])          ->name('employee.detail');
 Route::post('/employee/update/{id}',        [EmployeeController::class, 'update'])          ->name('employee.update');

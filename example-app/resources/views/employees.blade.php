@@ -112,10 +112,13 @@
 																	<a href="employee/detail/{{$employee->id}}" class="menu-link px-3">View</a>
 																</div>
 																<!--end::Menu item-->
-																<!--begin::Menu item-->
-																<div class="menu-item px-3">
-																	<a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row" data-id="{{ $employee->id }}" >Delete</a>
-																</div>
+																<form action="{{route('employee.deleteMultiple', ['id' => $employee->id]) }}" method="post">
+																	@csrf
+																	<!--begin::Menu item-->
+																	<div class="menu-item px-3">
+																		<button type="submit" onclick="return confirm('Are you sure?')">Delete</button>
+																	</div>
+																</form>
 																<!--end::Menu item-->
 															</div>
 															<!--end::Menu-->
