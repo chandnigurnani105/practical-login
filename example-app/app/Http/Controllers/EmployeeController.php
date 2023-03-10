@@ -54,7 +54,7 @@ class EmployeeController extends Controller
     
 
     return response()->json(['success' => '"Employee details has been updated successfully!"']);
-    //return redirect("/employees/detail/" + (string) $employee->id );
+    return redirect("/employees");
         
 
     }
